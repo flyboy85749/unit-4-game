@@ -9,8 +9,15 @@
 //////// *************** VARIABLES ******************///////////
 let counter = 0; // this will keep track of 
 let score = 0; // score tracker
-// random = ""; // random # between 19 - 120
 
+var points = new Array(100);
+        for (var i = 0; i < 100; i++) {
+            points[i] = i + 1; 
+        }
+
+        for (var i = 0; i < points.length; i++) {
+            // console.log(points[i]); //This prints the values that you stored in the array
+        }
 
 
 
@@ -32,7 +39,32 @@ let score = 0; // score tracker
         return Math.floor(Math.random() * (max - min + 1) + min);
       }
 
-    console.log(randomIntFromInterval(19,120));
+    // console.log(randomIntFromInterval(19,120));
+
+    function garnetIntFromInterval(min, max) { // min and max included 
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+    //   console.log(garnetIntFromInterval(1,24));
+
+      function emeraldIntFromInterval(min, max) { // min and max included 
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+    //   console.log(emeraldIntFromInterval(25,49));
+
+      function sapphireIntFromInterval(min, max) { // min and max included 
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+    //   console.log(sapphireIntFromInterval(50,74));
+
+
+      function amethystIntFromInterval(min, max) { // min and max included 
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+    //   console.log(amethystIntFromInterval(75,100));
 
 
 
@@ -45,24 +77,33 @@ function crystal (name, color, points, image) {
     obj.image = image;
     
         obj.customFunc = function(){
-            // console.log("Crystal name : " + this.name );
+         console.log("Crystal points : " + this.points );
         }
         return obj;
     }
+
     
-    var garnetCrystal = crystal("garnet","red", 50, "assets/images/garnet.png");
-    var emeraldCrystal = crystal("emerald","green", 60, "assets/images/emerald.png");
-    var sapphireCrystal = crystal("sapphire", "green", 75, "assets/images/sapphire.png");
-    var amethystCrystal = crystal("amethyst", "yellow" , 90, "assets/images/amethyst.png");
+    
+    var garnetCrystal = crystal("garnet","red", 60, "assets/images/garnet.png");
+    var emeraldCrystal = crystal("emerald","green", 70, "assets/images/emerald.png");
+    var sapphireCrystal = crystal("sapphire", "blue", 80, "assets/images/sapphire.png");
+    var amethystCrystal = crystal("amethyst", "purple" , 90, "assets/images/amethyst.png");
     
     //log: Crystal name
-    emeraldCrystal.customFunc();
+    amethystCrystal.customFunc();
 
 
     ////////////////////////////////////////////////////
     ////////////                    //////////////////
     ///// ************** PROCESSES ************ /////
     ////////////////////////////////////////////////////
-
+// change the HTML here
+$( ".value" ).append( i + " points" );
+$( ".rnd" ).append( randomIntFromInterval(19,120) );
+$( ".gar-value" ).append( randomIntFromInterval(1,20) );
+$( ".eme-value" ).append( randomIntFromInterval(1,20) );
+$( ".sap-value" ).append( randomIntFromInterval(1,20) );
+$( ".ame-value" ).append( randomIntFromInterval(1,20) );
+$( ".scr" ).append( score );
     
         
