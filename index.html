@@ -11,7 +11,7 @@
 
 <body>
 	<div class="container">
-		
+
 		<div class="jumbotron jumbotron-fluid">
 			<div class="container">
 				<h1 class="display-3">Collect All The Crystals</h1>
@@ -24,20 +24,42 @@
 
 							The object of the game is to match the random number score by
 							collecting the right crystals.</p>
-						
+
 					</div>
 					<div class="col-4">
-							<div class="rand">
-								<h2>Random Number: </h2>
-								<h2 class="rnd"></h2>
+						<div class="rand">
+							<h2>Random Number: </h2>
+							<h2 class="rnd"></h2>
+							<hr>
+							<div class="row">
+								<div class="col">
+									<div class="score">
+										<h2>Your Score: </h2>
+										<h2 class="scr"></h2>
+									</div>
+								</div>
+
 							</div>
 						</div>
-						<div class="col-4">
-								<div class="score">
-									<h2>Your Score: </h2>
-									<h2 class="scr"></h2>
-								</div>
+					</div>
+					<div class="col-4">
+
+						<div class="row">
+							<div class="col">
+								<h2>Wins:</h2>
+								<h2 class="wins">0</h2>
 							</div>
+
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col">
+								<h2>Losses:</h2>
+								<h2 class="losses">0</h2>
+							</div>
+						</div>
+					</div>
+
 				</div> <!-- end row -->
 			</div>
 		</div>
@@ -46,10 +68,11 @@
 			<div class="col-3">
 				<div class="crystal">
 					<div class="card">
-						<a href="#"><img class="card-img-top img" id="garnet" src="assets/images/garnet.png" alt="image of a garnet gemstone"></a>
+						<a href="#"><img class="card-img-top img" id="garnet" src="assets/images/garnet.png"
+								alt="image of a garnet gemstone"></a>
 						<div class="card-body">
 							<h4 class="card-title">Crystal: Garnet</h4>
-							<p class="card-text gar-value"></p>
+							<p class="card-text gar-value value"></p>
 						</div>
 					</div>
 				</div>
@@ -57,10 +80,11 @@
 			<div class="col-3">
 				<div class="crystal">
 					<div class="card">
-						<a href="#"><img class="card-img-top img" id="emerald" src="assets/images/emerald.png" alt="image of an emerald gemstone"></a>
+						<a href="#"><img class="card-img-top img" id="emerald" src="assets/images/emerald.png"
+								alt="image of an emerald gemstone"></a>
 						<div class="card-body">
 							<h4 class="card-title">Crystal: Emerald</h4>
-							<p class="card-text eme-value"></p>
+							<p class="card-text eme-value value"></p>
 						</div>
 					</div>
 				</div>
@@ -68,10 +92,11 @@
 			<div class="col-3">
 				<div class="crystal">
 					<div class="card">
-						<a href="#"><img class="card-img-top img" id="sapphire" src="assets/images/sapphire.png" alt="image of a sapphire gemstone"></a>
+						<a href="#"><img class="card-img-top img" id="sapphire" src="assets/images/sapphire.png"
+								alt="image of a sapphire gemstone"></a>
 						<div class="card-body">
 							<h4 class="card-title">Crystal: Sapphire</h4>
-							<p class="card-text sap-value"></p>
+							<p class="card-text sap-value value"></p>
 						</div>
 					</div>
 				</div>
@@ -79,11 +104,12 @@
 			<div class="col-3">
 				<div class="crystal">
 					<div class="card">
-						<a href="#"><img class="card-img-top img" id="amethyst" src="assets/images/amethyst.png" alt="image of an amethyst gemstone"></a>
-							
+						<a href="#"><img class="card-img-top img" id="amethyst" src="assets/images/amethyst.png"
+								alt="image of an amethyst gemstone"></a>
+
 						<div class="card-body">
 							<h4 class="card-title">Crystal: Amethyst</h4>
-							<p class="card-text ame-value"></p>
+							<p class="card-text ame-value value"></p>
 						</div>
 					</div>
 				</div>
@@ -103,4 +129,5 @@
 	<script src="assets/javascript/game.js"></script>
 </body>
 <a href="" src="assets/images/garnet.png"></a>
+
 </html>
