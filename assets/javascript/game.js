@@ -56,6 +56,8 @@ function startGame() {
     $(".value").css({"display": "none"});
     
     $(".scr").append(score);
+    var audio = new Audio("assets/sounds/265549__vikuserro__cheap-flash-game-tune.mp3");
+    audio.play();
 }
 startGame();
 
@@ -68,7 +70,7 @@ function randomIntFromInterval(min, max) { // min and max included
 // Pick a crystal
 // This will add crystal values to total score
 $("#garnet").click(function(){
-    $(".scr").append(gar);
+    $(".scr").append(clickGarnet());
     
     
   });
@@ -86,8 +88,14 @@ $("#garnet").click(function(){
   });
 
   // need to add each crystal value to get total score
-score = (gar + eme + sap + ame);
-console.log(score);
+// score = (gar + eme + sap + ame);
+// console.log(score);
+
+function clickGarnet (a,b) {
+  return (a + b);
+
+}
+console.log(clickGarnet(score, gar));
 
 function winLoss () {
   if (score === rand) {
