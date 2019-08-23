@@ -53,74 +53,101 @@ var playerTotal = 0;
 /////////// ********** FUNCTIONS ************** //////////
 /////////////////////////////////////////////////////////
 
+// rand = random # between 19 - 120
+// We can also use this for the point values for the crystals
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
+// resets game
 function startGame() {
-    // hide the crystal values
+    // hide the crystal values with css display: none
     $(".value").css({"display": "none"});
+
+    // generates a random number between 19 and 120
+    // reassigns the rand variable that we wrote earlier (line 26)
     rand = randomIntFromInterval(19, 120);
+
+    // displays the random number on the page
     $(".rnd").text(rand);
+
+    // initializes score to 0
     score = 0;
+
+    // displays the initial score of 0 on the page
     $(".scr").text(score);
+
+    // initializes the playerTotal to 0
     playerTotal = 0;
-    // $(".scr").append(score);
+    
+    // This starts the awesome game music!
     // var audio = new Audio("assets/sounds/265549__vikuserro__cheap-flash-game-tune.mp3");
     // audio.play();
 }
 startGame();
 
-// rand = random # between 19 - 120
-// We can also use this for the point values for the crystals
-function randomIntFromInterval(min, max) { // min and max included 
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
+
 
 // Pick a crystal
 // This will add crystal values to total score
+
 $("#garnet").click(function(){
     playerTotal = playerTotal + gar;
     $(".scr").text(playerTotal); 
-    winLoss(); // add to every one
+    winLoss();
   });
   $("#emerald").click(function(){
     playerTotal = playerTotal + eme;
     $(".scr").text(playerTotal); 
-    winLoss(); // add to every one
+    winLoss(); 
   });
   $("#sapphire").click(function(){
     playerTotal = playerTotal + sap;
     $(".scr").text(playerTotal); 
-    winLoss(); // add to every one
+    winLoss(); 
   });
   $("#amethyst").click(function(){
     playerTotal = playerTotal + ame;
     $(".scr").text(playerTotal); 
     
-    winLoss(); // add to every one  
+    winLoss();   
   });
   
-  // store variables on html elements 
-  
+    
 
-  // need to add each crystal value to get total score
-// score = (gar + eme + sap + ame);
-// console.log(score);
-
-// console.log(clickGarnet(score, gar));
-
+  // this function will keep track of wins/losses and player scores
 function winLoss () {
-  console.log(playerTotal);
-  console.log(rand);
+  // console.log(playerTotal);
+  // console.log(rand);
   if (playerTotal === rand) {
-    alert("You Won!");
+
+    // play winner audio
+    var audio = new Audio("assets/sounds/270402__littlerobotsoundfactory__jingle-win-00.wav");
+    audio.play();
+    // if playerTotal is equal to random number you win
+    alert("You Won! Your score was " + playerTotal);
+    // increase win counter by 1
     counter[0]++;
+    // display wins on page
     $(".wins").text(counter[0]);
+    // reset values in startGame for another round
    startGame(); 
   }
   
   else if (playerTotal > rand) {
-    alert("You Lose");
+
+       // if playerTotal is greater than random number you lose
+    alert("You Lose. Your score was " + playerTotal + ". Better luck next time.");
+    
+ // play loser audio
+ var audio = new Audio("assets/sounds/178875__rocotilos__you-lose-evil.wav");
+ audio.play();
+
+    // increases loss counter by 1
     counter[1]++;
+    // displays losses on page
     $(".losses").text(counter[1]);
+    // reset values in startGame for another round
     startGame();
   }
   
@@ -142,12 +169,8 @@ function winLoss () {
 // change the HTML here
 
 
-// adds random number to the display
-// $(".rnd").append(rand);
-
-// displays starting score value
-
 // these four add random numbers to the screen. hidden at start
+// $(".value").text(val + " points");
 $(".gar-value").append(gar + " points");
 $(".eme-value").append(eme + " points");
 $(".sap-value").append(sap + " points");

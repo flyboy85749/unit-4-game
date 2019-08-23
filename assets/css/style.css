@@ -9,6 +9,11 @@ body {
     text-align: justify;
 }
 
+.jumbotron {
+    margin: 0px;
+    padding: 0px;
+}
+
 
 .card-img-top {
     width: 152px;
