@@ -40,9 +40,7 @@ body {
 
 /* make mobile friendly site */
 @media only screen and (max-width: 980px) {
-    .jumbotron {
-        width: 100%;
-    }
+    
 
     h2, h4 {
         font-size: 90%;
@@ -55,9 +53,9 @@ body {
         display: inline;
     }
 
-    .crystals {
+    /* .crystals {
         width: 100%;
-    }
+    } */
     
     .display-3 {
         font-size: 60px;
@@ -74,9 +72,7 @@ body {
 }
 
 @media only screen and (max-width:768) {
-    .jumbotron {
-        width: 100%;
-    } 
+   
 
     h2, h4 {
         font-size: 80%;
@@ -94,9 +90,9 @@ body {
         
     }
 
-    .crystals {
+    /* .crystals {
         width: 100%;
-    }
+    } */
 
     .card-img-top {
         width: 80%;
@@ -110,9 +106,7 @@ body {
 }
 
 @media only screen and (max-width: 640px) {
-    .jumbotron {
-        width: 100%;
-    }
+    
 
     h2, h4 {
         font-size: 70%;
@@ -125,9 +119,9 @@ body {
         display: inline;
     }
 
-    .crystals {
+    /* .crystals {
         width: 100%;
-    }
+    } */
 
     .display-3 {
         font-size: 30px;
