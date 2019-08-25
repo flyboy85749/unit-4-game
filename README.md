@@ -9,6 +9,9 @@ This is a simple game where you have to "collect" crystals that each have a rand
 # languages used
 HTML, CSS, Javascript, jquery, Bootstrap layout
 
+# sounds
+sounds courtesy of <a href = "freesound.org">Free Sound</a>
+
 ## website
 
 https://flyboy85749.github.io/unit-4-game/
