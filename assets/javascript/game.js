@@ -74,8 +74,8 @@ function startGame() {
   playerTotal = 0;
 
   // This starts the awesome game music!
-  // var audio = new Audio("assets/sounds/265549__vikuserro__cheap-flash-game-tune.mp3");
-  // audio.play();
+  var audio = new Audio("assets/sounds/265549__vikuserro__cheap-flash-game-tune.mp3");
+  audio.play();
 }
 startGame();
 
