@@ -74,8 +74,8 @@ function startGame() {
   playerTotal = 0;
 
   // This starts the awesome game music!
-  var audio = new Audio("assets/sounds/265549__vikuserro__cheap-flash-game-tune.mp3");
-  audio.play();
+  // var audio = new Audio("assets/sounds/265549__vikuserro__cheap-flash-game-tune.mp3");
+  // audio.play();
 }
 startGame();
 
@@ -130,8 +130,8 @@ function winLoss() {
   if (playerTotal === rand) {
 
     // play winner audio
-    var audio = new Audio("assets/sounds/270402__littlerobotsoundfactory__jingle-win-00.wav");
-    audio.play();
+    // var audio = new Audio("assets/sounds/270402__littlerobotsoundfactory__jingle-win-00.wav");
+    // audio.play();
     // if playerTotal is equal to random number you win
     alert("You Won! Your score was " + playerTotal);
     // increase win counter by 1
@@ -148,8 +148,8 @@ function winLoss() {
     alert("You Lose. Your score was " + playerTotal + ". Better luck next time.");
 
     // play loser audio
-    var audio = new Audio("assets/sounds/178875__rocotilos__you-lose-evil.wav");
-    audio.play();
+    // var audio = new Audio("assets/sounds/178875__rocotilos__you-lose-evil.wav");
+    // audio.play();
 
     // increases loss counter by 1
     counter[1]++;

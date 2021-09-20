@@ -1,141 +1,196 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    margin: 0 auto;
-    text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.intro {
-    text-align: justify;
+h1 {
+  font-size: 2.5rem;
+  padding-bottom: 0.5em;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile {
-    display: none;
+  width: 95%;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.rand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.rand h2,
+.score h2 {
+  font-weight: 800;
+}
+.score h2 {
+  padding: 1em;
+}
+
+.scr,
+.rnd {
+  font-size: 1.5rem;
+}
+
+.wins {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+}
+
+.hidden {
+  display: none;
+}
+
+.intro {
+  width: 100vw;
 }
 
 .jumbotron {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-
 .card-img-top {
-    width: 152px;
-    height: 170px;
-    margin-top: 20px;
+  width: 152px;
+  height: 170px;
+  margin-top: 20px;
+}
+
+.crystals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .crystal {
-    text-align: center;
+  height: 25%;
+  width: 25%;
 }
 
-/* .img {
-    margin-left: 50px;
-} */
+h4 {
+  display: none;
+}
 
-.gar-value, .eme-value, .sap-value, .ame-value {
-    font-size: 30px;
-    font-weight: 700;
+.gar-value,
+.eme-value,
+.sap-value,
+.ame-value {
+  font-size: 30px;
+  font-weight: 700;
 }
 
 /* make mobile friendly site */
-@media only screen and (max-width: 980px) {
-    
+/* @media only screen and (max-width: 980px) {
+  h2,
+  h4 {
+    font-size: 90%;
+  }
 
-    h2, h4 {
-        font-size: 90%;
-    }
+  .hidden,
+  .lead {
+    display: none;
+  }
+  .mobile {
+    display: inline;
+    width: 100vw;
+  }
 
-    .hidden, .lead {
-        display: none;
-    }
-    .mobile {
-        display: inline;
-    }
-
-    /* .crystals {
+  /* .crystals {
         width: 100%;
-    } */
-    
-    .display-3 {
-        font-size: 60px;
-       
-    }
+    } 
 
-    .card-img-top {
-        max-width: 100%;
-  display: block;
-  height: auto;
-    }
-    .card-title {
-        font-size: 90%;
-    }
+  .display-3 {
+    font-size: 60px;
+  }
+
+  .card-img-top {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  .card-title {
+    font-size: 90%;
+  }
 }
 
-@media only screen and (max-width:768) {
-   
+@media only screen and (max-width: 768) {
+  h2,
+  h4 {
+    font-size: 80%;
+  }
 
-    h2, h4 {
-        font-size: 80%;
-    }
-    
-    .hidden, .lead {
-        display: none;
-    }
-    .mobile {
-        display: inline;
-    }
+  .hidden,
+  .lead {
+    display: none;
+  }
+  .mobile {
+    display: inline;
+  }
 
-    .display-3 {
-        font-size: 40px;
-        
-    }
+  .display-3 {
+    font-size: 40px;
+  }
 
-    /* .crystals {
+  /* .crystals {
         width: 100%;
-    } */
+    } 
 
-    .card-img-top {
-        max-width: 100%;
-        display: block;
-        height: auto;
-    }
+  .card-img-top {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
 
-    .card-title {
-        font-size: 80%;
-        font-weight: 800;
-    }
+  .card-title {
+    font-size: 80%;
+    font-weight: 800;
+  }
 }
 
 @media only screen and (max-width: 640px) {
-    
+  h2,
+  h4 {
+    font-size: 70%;
+  }
 
-    h2, h4 {
-        font-size: 70%;
-    }
+  .hidden,
+  .lead {
+    display: none;
+  }
+  .mobile {
+    display: inline;
+  }
 
-    .hidden, .lead {
-        display: none;
-    }
-    .mobile {
-        display: inline;
-    }
-
-    /* .crystals {
+  /* .crystals {
         width: 100%;
-    } */
+    } 
 
-    .display-3 {
-        font-size: 30px;
-        font-weight: 800;
-    }
-    .card-img-top {
-        max-width: 100%;
-  display: block;
-  height: auto;
-    }
-    .card-title {
-        font-size: 70%;
-        font-weight: 800;
-    }
-}
+  .display-3 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .card-img-top {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  .card-title {
+    font-size: 70%;
+    font-weight: 800;
+  }
+} */
