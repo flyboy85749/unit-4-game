@@ -128,7 +128,7 @@ function winLoss() {
 
   if (playerTotal === rand) {
 
-    alert("You Won! Your score was " + playerTotal);
+    $(".result").text("You Won! Your score was " + playerTotal);
     // increase win counter by 1
     counter[0]++;
     // display wins on page
@@ -140,7 +140,7 @@ function winLoss() {
   else if (playerTotal > rand) {
 
     // if playerTotal is greater than random number you lose
-    alert("You Lose. Your score was " + playerTotal + ". Better luck next time.");
+    $(".result").text("You Lose. Your score was " + playerTotal + ". Better luck next time.");
 
 
     // increases loss counter by 1
