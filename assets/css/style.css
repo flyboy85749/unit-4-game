@@ -35,12 +35,24 @@ h1 {
   font-weight: 800;
 }
 .score h2 {
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .scr,
 .rnd {
   font-size: 1.5rem;
+}
+
+.win {
+  font-size: 2em;
+  font-weight: 900;
+  color: green;
+}
+
+.loss {
+  font-size: 2em;
+  font-weight: 900;
+  color: red;
 }
 
 .wins {
@@ -49,6 +61,11 @@ h1 {
   justify-content: space-between;
   align-items: center;
   gap: 90px;
+}
+
+.winning,
+.losing {
+  font-size: 1.6em;
 }
 
 .hidden {
@@ -77,9 +94,9 @@ h1 {
   align-items: center;
 }
 
-.crystal {
-  height: 25%;
-  width: 25%;
+.crystal img {
+  height: 70%;
+  width: 70%;
 }
 
 h4 {
@@ -92,6 +109,10 @@ h4 {
 .ame-value {
   font-size: 30px;
   font-weight: 700;
+}
+
+footer {
+  padding: 1em;
 }
 
 /* make mobile friendly site */

@@ -125,19 +125,14 @@ crystalClick();
 
 // this function will keep track of wins/losses and player scores
 function winLoss() {
-  // console.log(playerTotal);
-  // console.log(rand);
+
   if (playerTotal === rand) {
 
-    // play winner audio
-    // var audio = new Audio("assets/sounds/270402__littlerobotsoundfactory__jingle-win-00.wav");
-    // audio.play();
-    // if playerTotal is equal to random number you win
     alert("You Won! Your score was " + playerTotal);
     // increase win counter by 1
     counter[0]++;
     // display wins on page
-    $(".wins").text(counter[0]);
+    $(".winning").text(counter[0]);
     // reset values in startGame for another round
     startGame();
   }
@@ -147,14 +142,11 @@ function winLoss() {
     // if playerTotal is greater than random number you lose
     alert("You Lose. Your score was " + playerTotal + ". Better luck next time.");
 
-    // play loser audio
-    // var audio = new Audio("assets/sounds/178875__rocotilos__you-lose-evil.wav");
-    // audio.play();
 
     // increases loss counter by 1
     counter[1]++;
     // displays losses on page
-    $(".losses").text(counter[1]);
+    $(".losing").text(counter[1]);
     // reset values in startGame for another round
     startGame();
   }
