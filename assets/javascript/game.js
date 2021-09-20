@@ -56,7 +56,7 @@ function randomIntFromInterval(min, max) { // min and max included
 function startGame() {
   // hide the crystal values with css display: none
   $(".value").css({ "display": "none" });
-
+  $(".result").css({ "display": "none" });
   // generates a random number between 19 and 120
   // reassigns the rand variable that we wrote earlier (line 26)
   rand = randomIntFromInterval(19, 120);
@@ -128,19 +128,20 @@ function winLoss() {
 
   if (playerTotal === rand) {
 
-    $(".result").text("You Won! Your score was " + playerTotal);
+    alert("You Won! Your score was " + playerTotal);
     // increase win counter by 1
     counter[0]++;
     // display wins on page
     $(".winning").text(counter[0]);
     // reset values in startGame for another round
+
     startGame();
   }
 
   else if (playerTotal > rand) {
 
     // if playerTotal is greater than random number you lose
-    $(".result").text("You Lose. Your score was " + playerTotal + ". Better luck next time.");
+    alert("You Lose. Better luck next time.");
 
 
     // increases loss counter by 1
@@ -148,6 +149,7 @@ function winLoss() {
     // displays losses on page
     $(".losing").text(counter[1]);
     // reset values in startGame for another round
+
     startGame();
   }
 
