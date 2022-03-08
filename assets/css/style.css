@@ -17,6 +17,8 @@ body {
   font-size: 16px;
   margin: 0 auto;
   text-align: center;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
 }
 
 p {
@@ -25,15 +27,25 @@ p {
   padding: 1em;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  line-height: 1.2;
+}
+
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bold;
-  padding-bottom: 0.5em;
+  padding: 0;
 }
 
 .lead {
-  font-size: 2.8rem;
+  font-size: 1.3rem;
 }
+
 
 .row {
   width: 95%;
@@ -59,27 +71,24 @@ h1 {
 
 .rand h2,
 .score h2 {
-  font-size: 2.5em;
-  font-weight: 800;
+  font-weight: 700;
 }
-.score h2 {
-  padding: 0.5em;
-}
+
 
 .scr,
 .rnd {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
 }
 
 .win {
-  font-size: 2em;
-  font-weight: 900;
+  font-size: 1.3em;
+  font-weight: 600;
   color: green;
 }
 
 .loss {
-  font-size: 2em;
-  font-weight: 900;
+  font-size: 1.3em;
+  font-weight: 600;
   color: red;
 }
 
@@ -118,7 +127,8 @@ h1 {
 .crystals {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 50px;
   align-items: center;
 }
 
@@ -145,9 +155,6 @@ footer {
   width: 95%;
 }
 
-footer p {
-  font-size: 2.5rem;
-}
 
 /* make mobile friendly site */
 /* @media only screen and (max-width: 980px) {
